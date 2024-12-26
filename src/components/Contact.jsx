@@ -9,7 +9,7 @@ function Contact() {
       <p>
         I'm always interested in hearing from creative minds and potential
         collaborators. Feel free to reach out using the information below, or
-        drop me a message on social media!
+        drop me a message on social media Below are the links.
       </p>
       <div className={styles.socialLinks}>
         <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
