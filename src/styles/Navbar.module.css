@@ -1,0 +1,49 @@
+.navbar {
+  background-color: #222; /* Darker background */
+  padding: 1rem 0; /* Use rem for better scaling */
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky; /* Stick the navbar to the top */
+  top: 0;
+  z-index: 100; /* Ensure it's above other content */
+  margin-bottom: 80px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Vertically center items */
+}
+
+.navbar li {
+  margin: 0 1.5rem; /* Increased spacing */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #eee; /* Slightly off-white */
+  font-weight: 500; /* Slightly lighter font-weight */
+  font-size: 1rem; /* Slightly larger font size */
+  padding: 0.5rem 1rem; /* Add some padding around links */
+  border-radius: 4px; /* Rounded corners */
+  transition: color 0.3s, background-color 0.3s; /* Add background transition */
+}
+
+.navbar a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover background */
+}
+
+/* Add active class styling */
+.navbar a.active {
+  color: white;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.2
+  ); /* More pronounced active background */
+}

@@ -1,0 +1,17 @@
+.app {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make the app take up full viewport height */
+  background-color: #f4f4f4;
+}
+
+/* Add this style */
+.app > div:nth-child(2) {
+  /* Selects the main content div */
+  flex: 1; /* Allows the content to expand and fill available space */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

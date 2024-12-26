@@ -1,0 +1,46 @@
+.artwork {
+  position: relative; /* For overlay positioning */
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.artwork:hover {
+  transform: scale(1.03);
+}
+
+.artwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px); /* Apply blur */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.artwork:hover .overlay {
+  opacity: 1;
+}
+
+.details {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  text-align: center;
+}

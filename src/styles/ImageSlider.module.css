@@ -1,0 +1,45 @@
+.imageSlider {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: center;
+  position: relative; /* For absolute positioning of buttons */
+}
+
+.imageSlider img {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+  margin: 0 20px; /* Add some horizontal margin */
+}
+
+.navButton {
+  background: none;
+  border: none;
+  color: #eee;
+  font-size: 2rem;
+  cursor: pointer;
+  opacity: 0.7; /* Slightly transparent buttons */
+  transition: opacity 0.3s;
+  position: absolute; /* Position buttons absolutely */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navButton:hover {
+  opacity: 1;
+  color: white;
+}
+
+.navButton:first-of-type {
+  left: 0;
+}
+
+.navButton:last-of-type {
+  right: 0;
+}
+
+.singleImage {
+  max-width: 100%;
+  max-height: 60vh;
+  object-fit: contain;
+}
